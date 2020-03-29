@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mapa Dinâmico</title>
+        <link rel="shortcut icon" href="lib/mapaComponente/images/marker-icon.png" type="image/png">
+        <link rel="stylesheet" href="lib/mapaComponente/style.css">
+        <script src="lib/mapaComponente/script.js"></script>
+        <script src="lib/jquery/dist/jquery.js"></script>
+        <script src="lib/toastr/toastr.js"></script>
+        <link rel="stylesheet" href="lib/toastr/toastr.css" />
+        <link rel="stylesheet" href="style/style.css">
+        <script src="script/script.js"></script> 
+    </head>
+
+    <body>
+        <br>
+
+        <div class="divInputs">
+            <label>Latitude</label>
+            <input id="Latitude" maxlength="15" value="-21.76110"/>
+
+            <label>Longitude</label>
+            <input id="Longitude" maxlength="15" value="-43.35057"/>
+
+            <button type="button" onclick="conferirCoordenadas()">Buscar</button>
+        </div>
+
+        <br>
+        <br>
+
+        <div id="containerMap"></div>
+    </body>    
+</html>

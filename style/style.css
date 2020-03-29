@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.divInputs {
+    text-align: center;
+}
+
+#location-map {
+    background: #fff;
+    border: none;
+    height: 750px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    z-index: 0;
+}
