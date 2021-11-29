@@ -6,5 +6,5 @@
 <br/>
 
 <p>Biblioteca: Leaflet</p>
-<p>Biblioteca: Toastr (Não obrigatório)</p>
-<p>Biblioteca: JQuery (Não obrigatório)</p>
+<p>Biblioteca: Toastr</p>
+<p>Biblioteca: JQuery</p>
