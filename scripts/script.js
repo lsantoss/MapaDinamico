@@ -1,6 +1,6 @@
 function conferirCoordenadas() {
-    var latitude = document.querySelector("#Latitude").value;
-    var longitude = document.querySelector("#Longitude").value;
+    var latitude = document.querySelector("#latitude").value;
+    var longitude = document.querySelector("#longitude").value;
 
     if (latitude === "" || longitude === "") {
         esconderMapa();
@@ -19,10 +19,14 @@ function esconderMapa() {
 }
 
 function mostrarMapa() {
-    var container = L.DomUtil.get('location-map'); if (container != null) { container._leaflet_id = null; }
+    var container = L.DomUtil.get('location-map');
+        
+    if (container != null) { 
+        container._leaflet_id = null; 
+    }
 
-    var latitude = document.querySelector("#Latitude").value;
-    var longitude = document.querySelector("#Longitude").value;
+    var latitude = document.querySelector("#latitude").value;
+    var longitude = document.querySelector("#longitude").value;
 
     if (latitude === "" || longitude === "") {
         esconderMapa();
@@ -32,7 +36,7 @@ function mostrarMapa() {
 
         var map = L.map('location-map').setView([latitude, longitude], 17);
         map.setMaxBounds([[84.67351256610522, -174.0234375], [-58.995311187950925, 180.1421875]]);        
-        mapLink = '<a href="https://openstreetmap.org">Lucas Santos - Github</a>';
+        mapLink = '<a href="https://github.com/lsantoss?tab=repositories">Lucas Santos - Github</a>';
         L.tileLayer(
             'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 attribution: '&copy; ' + mapLink,
