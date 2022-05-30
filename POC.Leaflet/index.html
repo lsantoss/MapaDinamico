@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mapa Dinâmico</title>
-        <link rel="shortcut icon" href="libs/leaflet/images/marker-icon.png" type="image/png">
+        <title>POC.Leaflet</title>
+        <link rel="shortcut icon" href="images/favicon.png" type="image/png">
         <link rel="stylesheet" href="libs/leaflet/style.css">        
         <link rel="stylesheet" href="libs/toastr/toastr.css" />
         <link rel="stylesheet" href="styles/style.css">
     </head>
 
     <body>
-        <div class="divInputs">
+        <div class="div-inputs">
             <label>Latitude:</label>
             <input id="latitude" maxlength="15" value="-21.76110"/>
 
             <label>Longitude:</label>
             <input id="longitude" maxlength="15" value="-43.35057"/>
 
-            <button type="button" onclick="conferirCoordenadas()">Buscar</button>
+            <button type="button" onclick="search()">Search</button>
         </div>
 
-        <div id="containerMap"></div>
+        <div id="container-map"></div>
     </body> 
     
     <script src="libs/leaflet/script.js"></script>
