@@ -4,7 +4,7 @@ function search() {
 
     if (latitude === "" || longitude === "") {
         removeMap();
-        toastr.error("Latitude and Longitude fields are required!");
+        toastr.info("Latitude and Longitude fields are required!");
     }
     else {
         showMap(latitude, longitude);
